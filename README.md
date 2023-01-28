@@ -1,8 +1,10 @@
 # Introduction:
 
-The module is used to deploy azure resource groups over terraform with a default setup (Infrastructure as Code).
+The module is used to deploy azure network that will be needed for the kubernetes module over terraform with a default setup (Infrastructure as Code).
 
-# Exmaple Use of Modul:
+> **_NOTE:_** The required providers, providers configuration and terraform version are maintained in the user's configuration and are not maintained in the modules themselves.
+
+# Example Use of Module:
 
     module "network" {
     source                          = "github.com/la-cc/terraform-azure-network?ref=1.0.0"
