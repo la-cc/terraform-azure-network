@@ -10,8 +10,8 @@ The module is used to deploy azure network that will be needed for the kubernete
     source                          = "github.com/la-cc/terraform-azure-network?ref=1.0.0"
 
     resource_group_name             =  module.resource_group.name
-    name                            = "vnet-default"
-    virtual_network_address_space   = ["10.0.0.0/8"]
+    name                            = var.name
+    virtual_network_address_space   = var.virtual_network_address_space
     tags                            = var.tags
 
     }

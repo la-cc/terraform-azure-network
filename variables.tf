@@ -10,6 +10,7 @@ variable "name" {
 
 variable "virtual_network_address_space" {
   type        = list(string)
+  default     = ["10.0.0.0/8"]
   description = "The address space that is used the virtual network. You can supply more than one address space."
 
 }
